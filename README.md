@@ -2,17 +2,21 @@ Gestor de Tasques - Autenticació JWT
 API REST per a la gestió de tasques amb autenticació JWT i control d'accés per rols.
 Instal·lació
 ```
-bashgit clone <url-del-repositori>
+git clone <url-del-repositori>
 cd OP1-B1-NODE-06_OriolTorra
 npm install
 ```
 Crea un arxiu .env:
+```
 envMONGODB_URI=mongodb://localhost:27017/task-manager
 JWT_SECRET=la_teva_clau_secreta_super_segura
 JWT_EXPIRES_IN=7d
 PORT=3000
+```
 Inicia el servidor:
-bashnpm start
+```
+npm start
+```
 ```
 
 ## Variables d'Entorn
@@ -51,9 +55,11 @@ GET    /api/admin/users           - Llistar usuaris (admin)
 GET    /api/admin/tasks           - Llistar totes les tasques (admin)
 DELETE /api/admin/users/:id       - Eliminar usuari (admin)
 PUT    /api/admin/users/:id/role  - Canviar rol (admin)
+
 Exemples d'Ús
 Registre
-httpPOST /api/auth/register
+```
+POST /api/auth/register
 Content-Type: application/json
 
 {
@@ -61,7 +67,10 @@ Content-Type: application/json
   "email": "oriol.torra24@lacetania.cat",
   "password": "1qazZAQ!"
 }
+```
+
 Resposta:
+```
 json{
   "success": true,
   "data": {
@@ -74,16 +83,20 @@ json{
     }
   }
 }
+```
 Login
-httpPOST /api/auth/login
+```
+POST /api/auth/login
 Content-Type: application/json
 
 {
   "email": "oriol.torra24@lacetania.cat",
   "password": "1qazZAQ!"
 }
+```
 Crear tasca
-httpPOST /api/tasks
+```
+POST /api/tasks
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 Content-Type: application/json
 
@@ -93,8 +106,10 @@ Content-Type: application/json
   "cost": 500,
   "hours_estimated": 10
 }
+```
 Llistar tasques
-httpGET /api/tasks
+```
+GET /api/tasks
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
 
@@ -122,6 +137,7 @@ El token conté:
 Afegeix el header a cada petició protegida:
 ```
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
 Rols
 
 user: Pot gestionar només les seves tasques
@@ -137,3 +153,4 @@ Contrasenya mínim 6 caràcters amb majúscula, minúscula i número
 Autor
 
 Oriol Torra - T7 Gestor de Tasques - OP1-B1-NODE
+
