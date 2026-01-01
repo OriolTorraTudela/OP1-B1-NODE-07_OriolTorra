@@ -55,7 +55,7 @@ GET    /api/admin/users           - Llistar usuaris (admin)
 GET    /api/admin/tasks           - Llistar totes les tasques (admin)
 DELETE /api/admin/users/:id       - Eliminar usuari (admin)
 PUT    /api/admin/users/:id/role  - Canviar rol (admin)
-
+```
 Exemples d'Ús
 Registre
 ```
@@ -153,5 +153,6 @@ Contrasenya mínim 6 caràcters amb majúscula, minúscula i número
 Autor
 
 Oriol Torra - T7 Gestor de Tasques - OP1-B1-NODE
+
 
 
