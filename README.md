@@ -1,34 +1,35 @@
-Gestor de Tasques - Autenticació JWT
+# Gestor de Tasques - Autenticació JWT
 API REST per a la gestió de tasques amb autenticació JWT i control d'accés per rols.
-Instal·lació
+## Instal·lació
 ```
 git clone <url-del-repositori>
 cd OP1-B1-NODE-06_OriolTorra
 npm install
 ```
-Crea un arxiu .env:
+## Crea un arxiu .env:
 ```
 envMONGODB_URI=mongodb://localhost:27017/task-manager
 JWT_SECRET=la_teva_clau_secreta_super_segura
 JWT_EXPIRES_IN=7d
 PORT=3000
 ```
-Inicia el servidor:
+## Inicia el servidor:
 ```
 npm start
 ```
 ```
-
+```
 ## Variables d'Entorn
-
+```
 | Variable | Descripció | Obligatòria |
 |----------|------------|-------------|
 | MONGODB_URI | URI de connexió a MongoDB | Sí |
 | JWT_SECRET | Clau secreta per JWT | Sí |
 | JWT_EXPIRES_IN | Temps de validesa del token | Sí |
 | PORT | Port del servidor | No |
-
+```
 ## Endpoints
+```
 ```
 ### Autenticació
 ```
@@ -56,8 +57,8 @@ GET    /api/admin/tasks           - Llistar totes les tasques (admin)
 DELETE /api/admin/users/:id       - Eliminar usuari (admin)
 PUT    /api/admin/users/:id/role  - Canviar rol (admin)
 ```
-Exemples d'Ús
-Registre
+## Exemples d'Ús
+### Registre
 ```
 POST /api/auth/register
 Content-Type: application/json
@@ -69,7 +70,7 @@ Content-Type: application/json
 }
 ```
 
-Resposta:
+### Resposta:
 ```
 json{
   "success": true,
@@ -84,7 +85,7 @@ json{
   }
 }
 ```
-Login
+### Login
 ```
 POST /api/auth/login
 Content-Type: application/json
@@ -94,7 +95,7 @@ Content-Type: application/json
   "password": "1qazZAQ!"
 }
 ```
-Crear tasca
+### Crear tasca
 ```
 POST /api/tasks
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
@@ -107,7 +108,7 @@ Content-Type: application/json
   "hours_estimated": 10
 }
 ```
-Llistar tasques
+### Llistar tasques
 ```
 GET /api/tasks
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
@@ -153,6 +154,7 @@ Contrasenya mínim 6 caràcters amb majúscula, minúscula i número
 Autor
 
 Oriol Torra - T7 Gestor de Tasques - OP1-B1-NODE
+
 
 
 
