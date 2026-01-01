@@ -139,7 +139,7 @@ Afegeix el header a cada petició protegida:
 ```
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 ```
-Rols
+### Rols
 
 user: Pot gestionar només les seves tasques
 admin: Pot gestionar tots els usuaris i tasques
@@ -154,6 +154,7 @@ Contrasenya mínim 6 caràcters amb majúscula, minúscula i número
 Autor
 
 Oriol Torra - T7 Gestor de Tasques - OP1-B1-NODE
+
 
 
 
