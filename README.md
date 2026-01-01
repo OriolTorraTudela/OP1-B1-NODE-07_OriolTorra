@@ -17,8 +17,7 @@ PORT=3000
 ```
 npm start
 ```
-```
-```
+
 ## Variables d'Entorn
 ```
 | Variable | Descripció | Obligatòria |
@@ -29,8 +28,7 @@ npm start
 | PORT | Port del servidor | No |
 ```
 ## Endpoints
-```
-```
+
 ### Autenticació
 ```
 POST   /api/auth/register          - Registrar usuari
@@ -151,9 +149,10 @@ Registre:
 Email vàlid i únic
 Contrasenya mínim 6 caràcters amb majúscula, minúscula i número
 
-Autor
+### Autor
 
 Oriol Torra - T7 Gestor de Tasques - OP1-B1-NODE
+
 
 
 
