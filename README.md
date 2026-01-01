@@ -29,7 +29,7 @@ npm start
 | PORT | Port del servidor | No |
 
 ## Endpoints
-
+```
 ### Autenticació
 ```
 POST   /api/auth/register          - Registrar usuari
@@ -153,4 +153,5 @@ Contrasenya mínim 6 caràcters amb majúscula, minúscula i número
 Autor
 
 Oriol Torra - T7 Gestor de Tasques - OP1-B1-NODE
+
 
