@@ -1,9 +1,11 @@
 Gestor de Tasques - Autenticació JWT
 API REST per a la gestió de tasques amb autenticació JWT i control d'accés per rols.
 Instal·lació
+```
 bashgit clone <url-del-repositori>
 cd OP1-B1-NODE-06_OriolTorra
 npm install
+```
 Crea un arxiu .env:
 envMONGODB_URI=mongodb://localhost:27017/task-manager
 JWT_SECRET=la_teva_clau_secreta_super_segura
@@ -133,4 +135,5 @@ Email vàlid i únic
 Contrasenya mínim 6 caràcters amb majúscula, minúscula i número
 
 Autor
+
 Oriol Torra - T7 Gestor de Tasques - OP1-B1-NODE
